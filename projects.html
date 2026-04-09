@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manav Patel - Projects</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #F4F4F4;
+      color: #2E2E2E;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #F4F4F4;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      color: #4A90E2;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #2E2E2E;
+    }
+
+    nav {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #F4F4F4;
+      border-bottom: 1px solid #4A90E2;
+    }
+
+    nav a {
+      color: #4A90E2;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #2E2E2E;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #4A90E2;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #FFFFFF;
+      border: 1px solid #4A90E2;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      color: #2E2E2E;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(74, 144, 226, 0.2);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #4A90E2;
+    }
+
+    .project-card p {
+      color: #2E2E2E;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+    .project-card a {
+      display: inline-block;
+      text-decoration: none;
+      color: #FFFFFF;
+      background-color: #4A90E2;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+      font-size: 0.9em;
+    }
+
+    .project-card a:hover {
+      background-color: #2E71B8;
+    }
+
+    .project-card a.demo-link {
+      background-color: #50C878;
+    }
+
+    .project-card a.demo-link:hover {
+      background-color: #3DA860;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #F4F4F4;
+      color: #2E2E2E;
+    }
+
+    footer a {
+      color: #4A90E2;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Manav Patel</h1>
+    <p>Cybersecurity Portfolio | Bachelor of Science in Computing and Security Technology</p>
+  </header>
+
+  <nav>
+    <a href="index.html">About & Education</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Network Scanner Web Interface</h3>
+        <p>A Python-based tool that scans network ports and provides a web interface for easy monitoring and reporting.</p>
+        <p><strong>Technologies:</strong> Python, Network Security, Socket Programming, Reconnaissance, Cybersecurity Fundamental.</p>
+        <div class="project-links">
+          <a href="https://github.com/manav1777/network-scanner" target="_blank">View on GitHub</a>
+          <a href="https://network-scanner-r6a5.onrender.com/" class="demo-link" target="_blank">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Phishing Detection Tool</h3>
+        <p>A program designed to detect and flag phishing attempts in real-time using URL analysis and pattern recognition.</p>
+        <p><strong>Technologies:</strong> Python, Cybersecurity, URL Analysis, Threat Detection, Pattern Recognition.</p>
+        <div class="project-links">
+          <a href="https://github.com/manav1777/phishing-detector" target="_blank">View on GitHub</a>
+          <a href="https://phishing-detector-lwvi.onrender.com/" class="demo-link" target="_blank">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Secure App</h3>
+        <p>A web application designed with security best practices to protect user data and prevent common attacks like SQL injection and XSS.</p>
+        <p><strong>Technologies:</strong> Python, Flask, Web Development, Secure Coding, Git.</p>
+        <div class="project-links">
+          <a href="https://github.com/manav1777/Secure-app" target="_blank">View on GitHub</a>
+          <a href="https://secure-app-1.onrender.com" class="demo-link" target="_blank">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Email Header Analyzer</h3>
+        <p>A Flask-based tool that analyzes email headers to verify SPF, DKIM, and DMARC authentication and detect potential spoofing attempts.</p>
+        <p><strong>Technologies:</strong> Python, Email Security, SPF/DKIM Verification, Phishing Analysis.</p>
+        <div class="project-links">
+          <a href="https://github.com/manav1777" target="_blank">View on GitHub</a>
+          <a href="https://email-header-analyzer-5i95.onrender.com/" class="demo-link" target="_blank">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>VulnShop Security Project</h3>
+        <p>An educational web application that demonstrates common security vulnerabilities and their remediation. Features both vulnerable and secure versions to teach defensive coding practices.</p>
+        <p><strong>Technologies:</strong> Python, Flask, HTML, CSS, SQL</p>
+        <div class="project-links">
+          <a href="https://github.com/manav1777/vulnshop-security-project" target="_blank">View on GitHub</a>
+          <a href="https://vulnshop-security-project-1.onrender.com/" class="demo-link" target="_blank">Live Demo →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Contact: manavp1705@gmail.com | <a href="https://linkedin.com/in/manavpatel017" target="_blank">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
