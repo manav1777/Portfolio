@@ -1,16 +1,16 @@
-# Hi, I'm Manav 👋
+# Hi, I'm Manav Patel
 
 Cybersecurity student @ Drexel University focused on information security, application security, network security, and security engineering.
 
-🔐 Building practical security tools across email security, web security, authentication, phishing detection, and network reconnaissance.
+Building practical security tools across email security, web security, authentication, phishing detection, and network reconnaissance.
 
-## 🛠 Technologies
+## Technologies
 
 `Python` `Flask` `SQL` `HTML` `CSS` `Linux` `Git` `GitHub`
 
 **Security:** Web Application Security · Email Security · Phishing Detection · Network Security · Secure Coding · IT Risk
 
-## 🚀 Projects
+## Projects
 
 ### [MailGuard](https://github.com/manav1777/MailGuard)
 Email security platform for phishing detection, suspicious URL analysis, spoofing detection, spam detection, and risk scoring.
@@ -27,11 +27,11 @@ Multithreaded TCP port scanner for discovering open ports and identifying common
 ### [Phishing Detector](https://github.com/manav1777/phishing-detector)
 Rule-based URL analyzer for detecting phishing indicators, deceptive domain patterns, and suspicious links.
 
-## 🎓 Education
+## Education
 
 **Drexel University**  
 B.S. Computing & Security Technology · Expected June 2029
 
-## 📫 Connect
+## Connect
 
 [Email](mailto:mdp99@drexel.edu) · [LinkedIn](https://linkedin.com/in/manavpatel017)
