@@ -1,50 +1,37 @@
-# Manav Patel
+# Hi, I'm Manav 👋
 
-Cybersecurity student at Drexel University studying Computing & Security Technology.
+Cybersecurity student @ Drexel University focused on information security, application security, network security, and security engineering.
 
-I build practical security tools focused on web application security, email security, network security, authentication, and threat detection.
+🔐 Building practical security tools across email security, web security, authentication, phishing detection, and network reconnaissance.
 
-## Selected Projects
+## 🛠 Technologies
 
-### MailGuard
+`Python` `Flask` `SQL` `HTML` `CSS` `Linux` `Git` `GitHub`
+
+**Security:** Web Application Security · Email Security · Phishing Detection · Network Security · Secure Coding · IT Risk
+
+## 🚀 Projects
+
+### [MailGuard](https://github.com/manav1777/MailGuard)
 Email security platform for phishing detection, suspicious URL analysis, spoofing detection, spam detection, and risk scoring.
 
-[View Repository](https://github.com/manav1777/MailGuard)
+### [VulnShop](https://github.com/manav1777/vulnshop-security-project)
+Web security lab demonstrating SQL injection, XSS, broken access control, authentication weaknesses, and secure remediation.
 
-### VulnShop
-Educational web security platform demonstrating vulnerable and secure implementations of SQL injection, XSS, broken access control, and authentication security.
+### [Secure App](https://github.com/manav1777/Secure-app)
+Authentication and security monitoring application using bcrypt, session management, activity logging, and failed-login detection.
 
-[View Repository](https://github.com/manav1777/vulnshop-security-project)
-
-### Secure App
-Authentication and security monitoring application using bcrypt password hashing, session management, activity logging, and failed-login detection.
-
-[View Repository](https://github.com/manav1777/Secure-app)
-
-### Network Scanner
+### [Network Scanner](https://github.com/manav1777/network-scanner)
 Multithreaded TCP port scanner for discovering open ports and identifying common network services.
 
-[View Repository](https://github.com/manav1777/network-scanner)
+### [Phishing Detector](https://github.com/manav1777/phishing-detector)
+Rule-based URL analyzer for detecting phishing indicators, deceptive domain patterns, and suspicious links.
 
-### Phishing Detector
-Rule-based URL analysis tool for identifying phishing indicators, deceptive domain patterns, and suspicious URLs.
-
-[View Repository](https://github.com/manav1777/phishing-detector)
-
-## Technologies
-
-**Security:** Web Application Security · Phishing Detection · Email Security · Network Security · Secure Coding · IT Risk
-
-**Programming:** Python · Flask · SQL · HTML · CSS · Git
-
-**Systems & Networking:** Linux · TCP/IP · DNS · Socket Programming · Network Reconnaissance
-
-## Education
+## 🎓 Education
 
 **Drexel University**  
-B.S. Computing & Security Technology  
-Expected June 2029
+B.S. Computing & Security Technology · Expected June 2029
 
-## Connect
+## 📫 Connect
 
-[LinkedIn](https://linkedin.com/in/manavpatel017) · [Email](mailto:mdp99@drexel.edu)
+[Email](mailto:mdp99@drexel.edu) · [LinkedIn](https://linkedin.com/in/manavpatel017)
