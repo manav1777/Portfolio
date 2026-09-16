@@ -3,113 +3,1311 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manav Patel - About & Education</title>
+
+  <title>Manav Patel | Cybersecurity</title>
+
+  <meta
+    name="description"
+    content="Manav Patel - Cybersecurity student at Drexel University focused on information security, security engineering, web application security, network security, and IT risk."
+  >
+
   <style>
+    /* =========================
+       RESET
+    ========================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #F4F4F4; /* light gray background */
-      color: #2E2E2E; /* charcoal text */
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background: #0b0d10;
+      color: #e8eaed;
+      line-height: 1.6;
     }
 
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #F4F4F4;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-      color: #4A90E2; /* muted blue headings */
+    .container {
+      width: min(1080px, calc(100% - 40px));
+      margin: 0 auto;
     }
 
-    header p {
-      font-size: 1.2em;
-      color: #2E2E2E;
-    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
 
     nav {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #F4F4F4;
-      border-bottom: 1px solid #4A90E2;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(11, 13, 16, 0.90);
+      backdrop-filter: blur(14px);
+
+      border-bottom: 1px solid #20242a;
     }
 
-    nav a {
-      color: #4A90E2;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.2s;
+    .nav-inner {
+      height: 68px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    nav a:hover {
-      color: #2E2E2E;
+    .logo {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
+
+    .logo span {
+      color: #737d88;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #9da5ae;
+      font-size: 0.92rem;
+      font-weight: 500;
+
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      padding: 125px 0 105px;
+    }
+
+    .hero-location {
+      color: #8d96a1;
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(3.4rem, 8vw, 6rem);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      font-weight: 750;
+      max-width: 900px;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: #737d88;
+    }
+
+    .hero-description {
+      max-width: 710px;
+
+      margin-top: 30px;
+
+      color: #a0a8b2;
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+
+    .hero-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+
+      margin-top: 27px;
+
+      color: #9da5ae;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 9px 15px;
+
+      border: 1px solid #30363d;
+      border-radius: 7px;
+
+      font-size: 0.88rem;
+      font-weight: 600;
+
+      transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #161a20;
+      border-color: #505965;
+      transform: translateY(-1px);
+    }
+
+    .button.primary {
+      background: #e8eaed;
+      border-color: #e8eaed;
+      color: #0b0d10;
+    }
+
+    .button.primary:hover {
+      background: #ffffff;
+      border-color: #ffffff;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================== */
 
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 82px 0;
+      border-top: 1px solid #20242a;
     }
 
-    section h2 {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 40px;
-      color: #4A90E2;
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+
+      margin-bottom: 38px;
     }
 
-    .about, .education {
-      text-align: center;
-      margin-bottom: 60px;
+    .section-heading h2 {
+      font-size: 1.55rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
     }
+
+    .section-heading span {
+      color: #8d96a1;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+
+    /* =========================
+       PROJECTS
+    ========================== */
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .project-card {
+      background: #101318;
+
+      border: 1px solid #232830;
+      border-radius: 9px;
+
+      padding: 25px;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      border-color: #3c444e;
+      background: #12161c;
+    }
+
+    .project-number {
+      color: #69727d;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .project-card h3 {
+      font-size: 1.2rem;
+      font-weight: 650;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #a2aab4;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+
+      margin-top: 18px;
+    }
+
+    .tag {
+      padding: 5px 9px;
+
+      border: 1px solid #2a3038;
+      border-radius: 5px;
+
+      color: #969faa;
+      font-size: 0.82rem;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 18px;
+
+      margin-top: 21px;
+    }
+
+    .project-links a {
+      color: #d4d8dd;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .project-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+
+    /* =========================
+       EXPERIENCE
+    ========================== */
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 170px 1fr;
+      gap: 38px;
+
+      padding: 28px 0;
+
+      border-bottom: 1px solid #20242a;
+    }
+
+    .experience-item:first-child {
+      padding-top: 0;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .experience-date {
+      color: #8d96a1;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .experience-content h3 {
+      font-size: 1.2rem;
+      font-weight: 650;
+      margin-bottom: 5px;
+    }
+
+    .experience-company {
+      color: #929ba6;
+      font-size: 0.98rem;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .experience-content p {
+      color: #a2aab4;
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 700px;
+    }
+
+    .experience-contact p + p {
+      Margin-top: 10px;
+    }
+
+
+    /* =========================
+       TECHNOLOGIES
+    ========================== */
+
+    .technology-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .technology-group {
+      padding: 23px;
+
+      background: #101318;
+      border: 1px solid #232830;
+      border-radius: 9px;
+    }
+
+    .technology-group h3 {
+      font-size: 1rem;
+      font-weight: 650;
+      margin-bottom: 14px;
+    }
+
+    .technology-group p {
+      color: #969faa;
+      font-size: 0.91rem;
+      line-height: 1.85;
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+
+      padding: 30px;
+
+      background: #101318;
+      border: 1px solid #232830;
+      border-radius: 9px;
+    }
+
+    .contact-box h3 {
+      font-size: 1.35rem;
+      font-weight: 650;
+      margin-bottom: 6px;
+    }
+
+    .contact-box p {
+      color: #929ba6;
+      font-size: 0.92rem;
+    }
+
+    .contact-links {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================== */
 
     footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #F4F4F4;
-      color: #2E2E2E;
+      padding: 35px 0;
+
+      border-top: 1px solid #20242a;
+
+      color: #8d96a1;
+      font-size: 0.92rem;
     }
 
-    footer a {
-      color: #4A90E2;
-      text-decoration: none;
-      margin: 0 10px;
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 20px;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .footer-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .footer-links a {
+      color: #a5adb7;
+      font-weight: 500;
+
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 800px) {
+
+      .nav-inner {
+        height: 62px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 0.82rem;
+      }
+
+      .hero {
+        padding: 88px 0 75px;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .technology-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .experience-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+
+    @media (max-width: 520px) {
+
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 0.78rem;
+      }
+
+      .nav-links li:nth-child(2) {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 3.25rem;
+      }
+
+      .hero-description {
+        font-size: 0.98rem;
+      }
+
+      .hero-details {
+        font-size: 0.92rem;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .section-heading {
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .section-heading span {
+        font-size: 0.9rem;
+      }
+
+      .footer-links {
+        gap: 16px;
+        flex-wrap: wrap;
+      }
     }
   </style>
 </head>
+
+
 <body>
 
-  <header>
-    <h1>Manav Patel</h1>
-    <p>Cybersecurity Portfolio | Bachelor of Science in Computing and Security Technology</p>
-  </header>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
 
   <nav>
-    <a href="index.html">About & Education</a>
-    <a href="projects.html">Projects</a>
+    <div class="container nav-inner">
+
+      <a href="#top" class="logo">
+        Manav<span>.</span>
+      </a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#technologies">Technologies</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </div>
   </nav>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I'm Manav Patel, a cybersecurity student at Drexel University building practical security tools 
-      to solve real-world problems. I specialize in web application security, network reconnaissance, 
-      and threat detection turning security concepts into working solutions.</p>
-  </section>
 
-  <section class="education">
-    <h2>Education</h2>
-    <p>Bachelor of Science in Computing and Security Technology | Drexel University | Expected June 2029</p>
-  </section>
+  <main id="top">
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-location">
+          Philadelphia, PA
+        </div>
+
+        <h1>
+          Manav Patel
+          <span>Cybersecurity</span>
+        </h1>
+
+        <p class="hero-description">
+          Cybersecurity student at Drexel University focused on
+          information security, security engineering, web application
+          security, network security, and IT risk. I build practical
+          security tools that turn security concepts into working solutions.
+        </p>
+
+        <div class="hero-details">
+
+          <span>
+            Drexel University
+          </span>
+
+          <span>•</span>
+
+          <span>
+            B.S. Computing &amp; Security Technology
+          </span>
+
+          <span>•</span>
+
+          <span>
+            Expected June 2029
+          </span>
+
+        </div>
+
+        <div class="hero-actions">
+
+	  <a
+  	    href="https://github.com/manav1777"
+  	    target="_blank"
+ 	    rel="noopener noreferrer"
+       	    class="button"
+          >
+  	    GitHub ↗
+	  </a>
+
+          <a
+            href="https://linkedin.com/in/manavpatel017"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+  	    href="mailto:mdp99@drexel.edu"
+  	    class="button"
+	  >
+  	    Email ↗
+	  </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROJECTS
+    ========================== -->
+
+    <section id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>
+            Projects
+          </h2>
+
+          <span>
+            Selected cybersecurity work
+          </span>
+
+        </div>
+
+
+        <div class="projects">
+
+
+          <!-- MAILGUARD -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              01
+            </div>
+
+            <h3>
+              MailGuard
+            </h3>
+
+            <p>
+              Flask-based email security platform that analyzes emails
+              for phishing, spam, suspicious URLs, spoofing indicators,
+              and other security risks. Integrates with Gmail through
+              IMAP and provides risk scoring and a security dashboard.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Python
+              </span>
+
+              <span class="tag">
+                Flask
+              </span>
+
+              <span class="tag">
+                SQLite
+              </span>
+
+              <span class="tag">
+                Gmail IMAP
+              </span>
+
+              <span class="tag">
+                Phishing Detection
+              </span>
+
+              <span class="tag">
+                Email Security
+              </span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/manav1777/Email-header-Analyzer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code ↗
+              </a>
+
+              <a
+                href="https://email-header-analyzer-5i95.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site ↗
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- VULNSHOP -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              02
+            </div>
+
+            <h3>
+              VulnShop Security Project
+            </h3>
+
+            <p>
+              Educational web application demonstrating common web
+              application vulnerabilities and secure remediation.
+              Includes vulnerable and secure implementations to show
+              how attacks work and how defensive coding reduces risk.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Python
+              </span>
+
+              <span class="tag">
+                Flask
+              </span>
+
+              <span class="tag">
+                SQL
+              </span>
+
+              <span class="tag">
+                Web Security
+              </span>
+
+              <span class="tag">
+                Secure Coding
+              </span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/manav1777/vulnshop-security-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code ↗
+              </a>
+
+              <a
+                href="https://vulnshop-security-project-1.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site ↗
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- PHISHING DETECTOR -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              03
+            </div>
+
+            <h3>
+              Phishing Detection Tool
+            </h3>
+
+            <p>
+              Cybersecurity tool designed to identify potentially
+              malicious URLs and phishing attempts using URL analysis,
+              pattern recognition, and threat detection techniques.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Python
+              </span>
+
+              <span class="tag">
+                URL Analysis
+              </span>
+
+              <span class="tag">
+                Phishing Detection
+              </span>
+
+              <span class="tag">
+                Threat Detection
+              </span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/manav1777/phishing-detector"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code ↗
+              </a>
+
+              <a
+                href="https://phishing-detector-lwvi.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site ↗
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- NETWORK SCANNER -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              04
+            </div>
+
+            <h3>
+              Network Scanner
+            </h3>
+
+            <p>
+              Python-based network security tool that scans network
+              ports and presents results through a web interface.
+              Demonstrates network reconnaissance, socket programming,
+              and security monitoring fundamentals.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Python
+              </span>
+
+              <span class="tag">
+                Flask
+              </span>
+
+              <span class="tag">
+                Socket Programming
+              </span>
+
+              <span class="tag">
+                Network Security
+              </span>
+
+              <span class="tag">
+                Port Scanning
+              </span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/manav1777/network-scanner"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code ↗
+              </a>
+
+              <a
+                href="https://network-scanner-r6a5.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site ↗
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <!-- SECURE APP -->
+
+          <article class="project-card">
+
+            <div class="project-number">
+              05
+            </div>
+
+            <h3>
+              Secure App
+            </h3>
+
+            <p>
+              Security-focused web application demonstrating secure
+              coding practices and common web application security
+              principles, including defenses against SQL injection
+              and cross-site scripting.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">
+                Python
+              </span>
+
+              <span class="tag">
+                Flask
+              </span>
+
+              <span class="tag">
+                SQL
+              </span>
+
+              <span class="tag">
+                Secure Coding
+              </span>
+
+              <span class="tag">
+                Web Security
+              </span>
+
+            </div>
+
+            <div class="project-links">
+
+              <a
+                href="https://github.com/manav1777/Secure-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code ↗
+              </a>
+
+              <a
+                href="https://secure-app-1.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Site ↗
+              </a>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================== -->
+
+<section id="experience">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <h2>Experience</h2>
+      <span>Technical experience</span>
+    </div>
+
+    <div class="experience-item">
+
+      <div class="experience-date">
+        Sep 2025 — Mar 2026
+      </div>
+
+      <div class="experience-content">
+
+        <h3>
+          Undergraduate AI Developer &amp; Researcher
+        </h3>
+
+        <div class="experience-company">
+          Drexel University · Philadelphia, PA
+        </div>
+
+        <p>
+          Implemented authentication, role-based access control (RBAC),
+          and secure database practices to protect student data.
+        </p>
+
+        <p>
+          Prototyped Python backend services for the EnCoMPASS educational
+          platform, including an AI-powered feedback feature for instructor
+          and student workflows.
+        </p>
+
+        <p>
+          Performed system testing, debugging, and feature validation
+          across application features.
+        </p>
+
+        <p>
+          Evaluated local LLM outputs through Ollama against GPT-4
+          responses for A/B testing experiments and research documentation.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- =========================
+         TECHNOLOGIES
+    ========================== -->
+
+    <section id="technologies">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>
+            Technologies
+          </h2>
+
+          <span>
+            Tools &amp; technical focus
+          </span>
+
+        </div>
+
+
+        <div class="technology-grid">
+
+
+          <div class="technology-group">
+
+            <h3>
+              Security
+            </h3>
+
+            <p>
+              Web Application Security ·
+              Phishing Detection ·
+              Vulnerability Assessment ·
+              Threat Detection ·
+              Email Security ·
+              Secure Coding ·
+              IT Risk
+            </p>
+
+          </div>
+
+
+          <div class="technology-group">
+
+            <h3>
+              Programming
+            </h3>
+
+            <p>
+              Python ·
+              SQL ·
+              HTML ·
+              CSS ·
+              Flask ·
+              Git ·
+              GitHub
+            </p>
+
+          </div>
+
+
+          <div class="technology-group">
+
+            <h3>
+              Systems &amp; Networking
+            </h3>
+
+            <p>
+              Linux ·
+              TCP/IP ·
+              DNS ·
+              Socket Programming ·
+              Network Reconnaissance ·
+              Port Scanning ·
+              Network Security
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <h2>
+            Contact
+          </h2>
+
+        </div>
+
+
+        <div class="contact-box">
+
+          <div>
+
+            <h3>
+              Let's connect.
+            </h3>
+
+            <p>
+              Interested in cybersecurity, security engineering,
+              IT risk, and information security opportunities.
+            </p>
+
+          </div>
+
+
+          <div class="contact-links">
+
+            <a
+              href="mailto:manavp1705@gmail.com"
+              class="button primary"
+            >
+              Email
+            </a>
+
+            <a
+              href="https://linkedin.com/in/manavpatel017"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+            >
+              LinkedIn ↗
+            </a>
+
+            <a
+              href="https://github.com/manav1777"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button"
+            >
+              GitHub ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
   <footer>
-    <p>Contact: manavp1705@gmail.com | <a href="https://linkedin.com/in/manavpatel017" target="_blank">LinkedIn</a></p>
+
+    <div class="container footer-inner">
+
+      <span>
+        © 2026 Manav Patel
+      </span>
+
+      <div class="footer-links">
+
+        <a
+          href="https://github.com/manav1777"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://linkedin.com/in/manavpatel017"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a href="mailto:manavp1705@gmail.com">
+          Email
+        </a>
+
+      </div>
+
+    </div>
+
   </footer>
 
 </body>
